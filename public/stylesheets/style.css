@@ -1,0 +1,79 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+.time{
+    position:absolute;
+}
+
+.standup-status{
+    line-height:1080px;
+    font-family: DIN;
+    font-weight: bold;
+    vertical-align: center;
+    font-size: 80px;
+    position:absolute;
+    top:0px;
+    left:-800px;
+    width:800px;
+    height:1080px;
+    -webkit-transition: left 2s;
+}
+    
+.fireworks{
+    position:absolute;
+    background-image: url(http://fireworks.fireid.com/assets/background-83e61092857c7b514062a2e7173c6cb7.png);
+
+      background-position: center;
+      background-repeat: repeat;
+    width:2420px;
+    height:1080px;
+    -webkit-animation-name: move-background;
+    -webkit-animation-duration: 60s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    
+}
+.clock-container{
+    position:absolute;
+    width:1920px;
+    height:1080px;
+}
+.clock{
+    position:absolute;
+    left:420px;
+    width:1080px;
+    height:1080px;
+    -webkit-transition: left 2s;
+}
+
+.logo{
+    position:absolute;
+    left:1920px;
+    width:1080px;
+    height:1080px;
+    -webkit-transition: left 2s;
+    
+    background-image: url(http://fireworks.fireid.com/assets/logo-5ecf7f4793ef344314e03dd07c1e6f56.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:contain;
+    
+}
+
+@-webkit-keyframes move-background {
+  0% {
+    left:0px;
+  }
+  50% {
+    left:-500px;
+  }
+  100% {
+    left:0px;
+  }
+}
